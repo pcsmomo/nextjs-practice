@@ -88,3 +88,13 @@ Success! Project initialization completed. You may now add components.
 ```sh
 npx shadcn-ui@latest add button
 ```
+
+### 4. Home page
+
+#### tailwind gradient background
+
+```html
+<main
+  className="h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-sky-400 to-blue-800"
+></main>
+```
