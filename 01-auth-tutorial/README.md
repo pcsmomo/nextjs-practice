@@ -1,3 +1,5 @@
+# [01. Next Auth v5](https://www.youtube.com/watch?v=1MTyCvS05V4)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -35,12 +37,17 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+## Packages
+
+### ui framework - [shadcn/ui](https://ui.shadcn.com/)
+
 ## Notes while following the code
 
 ### 2. Project setup
 
 ```sh
 npx create-next-app@latest auth-tutorial
+
 Need to install the following packages:
 create-next-app@14.2.7
 Ok to proceed? (y)
@@ -52,4 +59,24 @@ Ok to proceed? (y)
 ✔ Would you like to use App Router? (recommended) … No / Yes
 ✔ Would you like to customize the default import alias (@/*)? … No / Yes
 Creating a new Next.js app in /Users/noah/Documents/study/study_codes/youtube/nextjs-practice/nextjs-practice-git/auth-tutorial.
+```
+
+#### install shadcn/ui
+
+```sh
+npx shadcn-ui@latest init
+
+Need to install the following packages:
+shadcn-ui@0.8.0
+Ok to proceed? (y)
+
+✔ Which style would you like to use? › New York
+✔ Which color would you like to use as base color? › Slate
+✔ Would you like to use CSS variables for colors? … no / yes
+
+✔ Writing components.json...
+✔ Initializing project...
+✔ Installing dependencies...
+
+Success! Project initialization completed. You may now add components.
 ```
