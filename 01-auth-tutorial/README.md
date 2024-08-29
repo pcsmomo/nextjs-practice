@@ -106,3 +106,9 @@ npx shadcn-ui@latest add button
 ```sh
 npx shadcn-ui@latest add card
 ```
+
+#### install react-icons for social icons
+
+```sh
+npm install react-icons
+```
