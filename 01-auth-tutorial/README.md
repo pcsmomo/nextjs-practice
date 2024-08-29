@@ -98,3 +98,11 @@ npx shadcn-ui@latest add button
   className="h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-sky-400 to-blue-800"
 ></main>
 ```
+
+### 5. Card wrapper
+
+#### Add shadcn/ui card
+
+```sh
+npx shadcn-ui@latest add card
+```
