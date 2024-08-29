@@ -41,6 +41,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ### ui framework - [shadcn/ui](https://ui.shadcn.com/)
 
+It adds the component to `@/components/ui` whenever we install a new component, giving us full control.
+
 ## Notes while following the code
 
 ### 2. Project setup
@@ -79,4 +81,10 @@ Ok to proceed? (y)
 ✔ Installing dependencies...
 
 Success! Project initialization completed. You may now add components.
+```
+
+#### Add shadcn/ui button
+
+```sh
+npx shadcn-ui@latest add button
 ```
