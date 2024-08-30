@@ -1,12 +1,20 @@
 "use server";
 
-export const login = (values: any) => {
-  console.log(values);
+import * as z from "zod";
 
-  // wait for 3 seconds
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve({ message: "Logged in successfully!" });
-    }, 3000);
-  });
+import { LoginSchema } from "@/schemas";
+
+const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
+export const login = async (values: z.infer<typeof LoginSchema>) => {
+  const validatedFields = LoginSchema.safeParse(values);
+
+  if (!validatedFields.success) {
+    return { error: "Invalid fields!" };
+  }
+
+  // wait for 2 seconds
+  await sleep(2000);
+
+  return { success: "Email sent!" };
 };
