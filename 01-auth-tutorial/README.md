@@ -121,3 +121,12 @@ npm install react-icons
 npx shadcn-ui@latest add form
 npx shadcn-ui@latest add input
 ```
+
+### 8. Database & Prisma setup
+
+#### Set up prisma
+
+```sh
+npm install -D prisma
+npm install @prisma/client
+```
