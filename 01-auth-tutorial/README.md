@@ -142,3 +142,35 @@ npx prisma init
 
 - create an account and postgresql project
 - copy the `schema.prisma` and `.env` from what neon.tech guides
+
+#### Generate prisma
+
+after adding model "User" to the `schema.prisma`
+
+```sh
+npx prisma generate
+
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+
+✔ Generated Prisma Client (v5.19.0) to ./node_modules/@prisma/client in 42ms
+
+Start by importing your Prisma Client (See: http://pris.ly/d/importing-client)
+
+Tip: Want to turn off tips and other hints? https://pris.ly/tip-4-nohints
+```
+
+```sh
+# after generated
+npx prisma db push
+
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": PostgreSQL database "next-auth-v5", schema "public" at "ep-fancy-water-a7u60dh4-pooler.ap-southeast-2.aws.neon.tech"
+
+🚀  Your database is now in sync with your Prisma schema. Done in 1.44s
+
+✔ Generated Prisma Client (v5.19.0) to ./node_modules/@prisma/client in 34ms
+```
+
+now we can see the table "User" on my account in neon.tech
