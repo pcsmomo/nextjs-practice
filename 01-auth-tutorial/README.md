@@ -130,3 +130,15 @@ npx shadcn-ui@latest add input
 npm install -D prisma
 npm install @prisma/client
 ```
+
+#### Initiate prisma
+
+```sh
+npx prisma init
+# default db is postgresql
+```
+
+#### PostgresSQL hosting service: [Neon.tech](https://neon.tech/)
+
+- create an account and postgresql project
+- copy the `schema.prisma` and `.env` from what neon.tech guides
