@@ -112,3 +112,12 @@ npx shadcn-ui@latest add card
 ```sh
 npm install react-icons
 ```
+
+### 6. Login form
+
+#### Add shadcn/ui form and input
+
+```sh
+npx shadcn-ui@latest add form
+npx shadcn-ui@latest add input
+```
