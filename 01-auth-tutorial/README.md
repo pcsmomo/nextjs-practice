@@ -174,3 +174,26 @@ Datasource "db": PostgreSQL database "next-auth-v5", schema "public" at "ep-fanc
 ```
 
 now we can see the table "User" on my account in neon.tech
+
+#### [Auth.js - from v5](https://authjs.dev/)
+
+- <https://next-auth.js.org/> is for until v4
+
+#### [Auth.js - Prisma Adapter](https://authjs.dev/getting-started/adapters/prisma)
+
+```sh
+npm install @auth/prisma-adapter
+
+# Already installed
+# npm install @prisma/client
+# npm install prisma --save-dev
+```
+
+We will modify the schema a little bit from here, [Naming Conventions](https://authjs.dev/getting-started/adapters/prisma#naming-conventions)
+
+After changing the `schema.prisma`
+
+```sh
+npx prisma generate
+npx prisma db push
+```
