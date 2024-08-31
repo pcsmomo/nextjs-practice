@@ -204,3 +204,10 @@ After add `password` column to `users`
 npx prisma generate
 npx prisma db push
 ```
+
+#### Install bcrypt for password
+
+```sh
+npm install bcrypt
+npm install --save-dev @types/bcrypt
+```
