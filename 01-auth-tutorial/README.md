@@ -197,3 +197,10 @@ After changing the `schema.prisma`
 npx prisma generate
 npx prisma db push
 ```
+
+After add `password` column to `users`
+
+```sh
+npx prisma generate
+npx prisma db push
+```
