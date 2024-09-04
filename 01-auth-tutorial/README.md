@@ -211,3 +211,24 @@ npx prisma db push
 npm install bcrypt
 npm install --save-dev @types/bcrypt
 ```
+
+### 10. Middleware & Login
+
+#### Install Next Auth v5 (Beta on 4/9/2024)
+
+[next-auth documentation](https://authjs.dev/reference/nextjs)
+
+```sh
+npm install next-auth@beta
+```
+
+#### Try to go `http://localhost:3000/api/auth/providers`
+
+we will get a `secret` error
+
+```sh
+ GET /api/auth/provider 400 in 24ms
+[auth][error] MissingSecret: Please define a `secret`. Read more at https://errors.authjs.dev#missingsecret
+```
+
+Let's set up a secret
