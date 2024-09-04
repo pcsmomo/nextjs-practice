@@ -232,3 +232,13 @@ we will get a `secret` error
 ```
 
 Let's set up a secret
+
+#### Generate SECRET key on my terminal
+
+```sh
+openssl rand -hex 32
+```
+
+#### Next JS middleware
+
+middleware is next js feature, not the next auth feature
