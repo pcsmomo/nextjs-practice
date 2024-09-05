@@ -1,9 +1,16 @@
 import NextAuth from "next-auth";
-import GitHub from "next-auth/providers/github";
+import { PrismaAdapter } from "@auth/prisma-adapter";
+
+import { db } from "@/lib/db";
+import authConfig from "@/auth.config";
 
 export const {
   handlers: { GET, POST },
   auth,
 } = NextAuth({
-  providers: [GitHub],
+  adapter: PrismaAdapter(db),
+  // database session strategy doesn't work with Edge yet.
+  // so we choose jwt for now.
+  session: { strategy: "jwt" },
+  ...authConfig,
 });

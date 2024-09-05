@@ -239,6 +239,30 @@ Let's set up a secret
 openssl rand -hex 32
 ```
 
-#### Next JS middleware
+#### [Next JS - middleware](https://nextjs.org/docs/app/building-your-application/routing/middleware)
+
+[Auth.js - middleware](https://authjs.dev/getting-started/migrating-to-v5#authenticating-server-side)
 
 middleware is next js feature, not the next auth feature
+
+#### [Edge Compatibility](https://authjs.dev/guides/edge-compatibility)
+
+[Following this guide: Edge Compatibility - Split config](https://authjs.dev/guides/edge-compatibility#split-config)
+
+database session strategy doesn't work with Edge yet. so we choose `jwt` for now.
+
+the reason we removed `session` in User, in `prisma.schema`
+
+```ts
+// auth.ts
+export const {
+  handlers: { GET, POST },
+  auth,
+} = NextAuth({
+  adapter: PrismaAdapter(db),
+  // database session strategy doesn't work with Edge yet.
+  // so we choose jwt for now.
+  session: { strategy: "jwt" },
+  ...authConfig,
+});
+```
