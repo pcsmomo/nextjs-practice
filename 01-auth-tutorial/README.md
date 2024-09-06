@@ -266,3 +266,20 @@ export const {
   ...authConfig,
 });
 ```
+
+#### Replace `bcrypt` to `bcryptjs`
+
+As the project cannot be built because of [`bcrypt` error with `node-pre-gyp`](https://www.npmjs.com/package/bcrypt)
+
+```sh
+ ⨯ ./node_modules/@mapbox/node-pre-gyp/lib/util/nw-pre-gyp/index.html
+```
+
+install `bcryptjs` instead of `bcrypt`
+
+```sh
+npm uninstall bcrypt @types/bcrypt
+
+npm install bcryptjs
+npm install --save-dev @types/bcryptjs
+```

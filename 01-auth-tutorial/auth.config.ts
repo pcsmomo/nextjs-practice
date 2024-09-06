@@ -1,4 +1,4 @@
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 
 // import GitHub from "next-auth/providers/github";
 import Credentials from "next-auth/providers/credentials";
