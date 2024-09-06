@@ -7,6 +7,8 @@ import authConfig from "@/auth.config";
 export const {
   handlers: { GET, POST },
   auth,
+  signIn,
+  signOut,
 } = NextAuth({
   adapter: PrismaAdapter(db),
   // database session strategy doesn't work with Edge yet.
