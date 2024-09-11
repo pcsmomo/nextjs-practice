@@ -283,3 +283,13 @@ npm uninstall bcrypt @types/bcrypt
 npm install bcryptjs
 npm install --save-dev @types/bcryptjs
 ```
+
+### 11. Callbacks
+
+[callback documentation - only v4 document exists](https://next-auth.js.org/configuration/callbacks)
+
+#### Prisma studio (Built-in db tool)
+
+```sh
+npx prisma studio
+```
